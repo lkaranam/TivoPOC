@@ -71,7 +71,7 @@ webConfig:
    browser:
     name: Chrome
     version: 35
-    driverLocation: src/test/resources/driver/chromedriver
+    driverLocation: src/test/resources/driver/chromedriver.exe
    platform: 
     name: Windows
     version: 8
