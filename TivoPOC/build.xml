@@ -13,7 +13,7 @@
 	<property name="test.reportsDir" value="${ws.home}/Reports" />
 	<property name="test.resources" value="${ws.home}/src/test/resources" />
 	<property name="ng.result" value="test-output" />
-	<property name="browser" value="/Applications/Firefox.app/Contents/MacOS/firefox"/>
+	<property name="browser" value="C:\Program Files (x86)\Mozilla Firefox\firefox.exe"/>
 
 
 	<path id="testcase.path">
