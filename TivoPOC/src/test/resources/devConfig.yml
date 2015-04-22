@@ -62,7 +62,7 @@ webConfig:
    browser:
     name: InternetExplorer
     version: 11
-    driverLocation: .//TivoPOC//src//test//resources//driver//IEDriverServer.exe
+    driverLocation: src//test//resources//driver//IEDriverServer.exe
    platform: 
     name: Windows
     version: 8
@@ -71,7 +71,7 @@ webConfig:
    browser:
     name: Chrome
     version: 35
-    driverLocation: ./TivoPOC/src/test/resources/driver/chromedriver
+    driverLocation: src/test/resources/driver/chromedriver
    platform: 
     name: Windows
     version: 8
