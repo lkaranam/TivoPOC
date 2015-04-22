@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Chrome Suite]">
+  <parameter name="testBedName" value="Chrome"/>
+  <test name="Chrome Test(failed)">
+    <classes>
+      <class name="com.etouch.tivopoc.pages.test.TestTivo">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="printTimeTaken"/>
+          <include name="tearDown"/>
+          <include name="printTimeStart"/>
+          <include name="testSearchForAShow" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.etouch.tivopoc.pages.test.TestTivo -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Chrome Suite] -->

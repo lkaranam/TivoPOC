@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Firefox Suite]">
+  <parameter name="testBedName" value="Firefox"/>
+  <listeners>
+    <listener class-name="com.etouch.tivopoc.listener.SuiteListener"/>
+  </listeners>
+  <test name="Firefox Test(failed)">
+    <classes>
+      <class name="com.etouch.tivopoc.pages.test.TestTivo">
+        <methods>
+          <include name="setUpBeforeClass"/>
+          <include name="printTimeTaken"/>
+          <include name="tearDown"/>
+          <include name="printTimeStart"/>
+          <include name="testSearchForAShow" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.etouch.tivopoc.pages.test.TestTivo -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+</suite> <!-- Failed suite [Firefox Suite] -->

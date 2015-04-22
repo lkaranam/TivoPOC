@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" total="10" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Firefox Suite" duration-ms="117026" started-at="2015-04-21T21:42:06Z" finished-at="2015-04-21T21:44:03Z">
+    <groups>
+    </groups>
+    <test name="Firefox Test" duration-ms="117026" started-at="2015-04-21T21:42:06Z" finished-at="2015-04-21T21:44:03Z">
+      <class name="com.etouch.tivopoc.pages.test.TestTivo">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="setUpBeforeClass" is-config="true" duration-ms="3231" started-at="2015-04-21T14:42:06Z" finished-at="2015-04-21T14:42:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeStart" is-config="true" duration-ms="1" started-at="2015-04-21T14:42:10Z" finished-at="2015-04-21T14:42:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSignIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="testSignIn()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="testSignIn" duration-ms="44488" started-at="2015-04-21T14:42:10Z" finished-at="2015-04-21T14:42:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2015-04-21T14:42:54Z" finished-at="2015-04-21T14:42:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSignIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:42:54Z" finished-at="2015-04-21T14:42:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testAddAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="testAddAShow()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="testAddAShow" duration-ms="28854" started-at="2015-04-21T14:42:54Z" finished-at="2015-04-21T14:43:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAShow -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2015-04-21T14:43:23Z" finished-at="2015-04-21T14:43:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testAddAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="testDeleteAShow()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="testDeleteAShow" duration-ms="18651" started-at="2015-04-21T14:43:23Z" finished-at="2015-04-21T14:43:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteAShow -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:43:23Z" finished-at="2015-04-21T14:43:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testDeleteAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2015-04-21T14:43:42Z" finished-at="2015-04-21T14:43:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testDeleteAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="FAIL" signature="testSearchForAShow(com.etouch.taf.core.datamanager.excel.TestParameters)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="testSearchForAShow" duration-ms="13407" started-at="2015-04-21T14:43:42Z" data-provider="tafDataProvider" finished-at="2015-04-21T14:43:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.etouch.taf.core.datamanager.excel.TestParameters@1763fb5b]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[searchForAShow-AssertErrorMsg: Exception msg: expected [House of Cards] but found [No search results found for: House of Cards]
+deleteAShow-AssertErrorMsg: Exception msg: expected [The Big Bang Theory] but found [The Simpsons]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: searchForAShow-AssertErrorMsg: Exception msg: expected [House of Cards] but found [No search results found for: House of Cards]
+deleteAShow-AssertErrorMsg: Exception msg: expected [The Big Bang Theory] but found [The Simpsons]
+
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.etouch.taf.util.SoftAssertor.displayErrors(SoftAssertor.java:198)
+	at com.etouch.tivopoc.pages.test.TestTivo.testSearchForAShow(TestTivo.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.etouch.taf.core.TestBedManager.executeTestNG(TestBedManager.java:133)
+	at com.etouch.tivopoc.common.TestTivoPOCUnit.initialize(TestTivoPOCUnit.java:80)
+	at com.etouch.tivopoc.common.TestTivoPOCUnit.test(TestTivoPOCUnit.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:113)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:85)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:54)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:134)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchForAShow -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:43:42Z" finished-at="2015-04-21T14:43:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSearchForAShow(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2015-04-21T14:43:56Z" finished-at="2015-04-21T14:43:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSearchForAShow(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="testsignOut()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="testsignOut" duration-ms="7212" started-at="2015-04-21T14:43:56Z" finished-at="2015-04-21T14:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsignOut -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:43:56Z" finished-at="2015-04-21T14:43:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testsignOut()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2015-04-21T14:44:03Z" finished-at="2015-04-21T14:44:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testsignOut()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@578d1fb5]" name="tearDown" is-config="true" duration-ms="182" started-at="2015-04-21T14:44:03Z" finished-at="2015-04-21T14:44:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.etouch.tivopoc.pages.test.TestTivo -->
+    </test> <!-- Firefox Test -->
+  </suite> <!-- Firefox Suite -->
+  <suite name="Chrome Suite" duration-ms="82147" started-at="2015-04-21T21:44:12Z" finished-at="2015-04-21T21:45:34Z">
+    <groups>
+    </groups>
+    <test name="Chrome Test" duration-ms="82147" started-at="2015-04-21T21:44:12Z" finished-at="2015-04-21T21:45:34Z">
+      <class name="com.etouch.tivopoc.pages.test.TestTivo">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="setUpBeforeClass" is-config="true" duration-ms="5169" started-at="2015-04-21T14:44:12Z" finished-at="2015-04-21T14:44:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBeforeClass -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeStart" is-config="true" duration-ms="1" started-at="2015-04-21T14:44:17Z" finished-at="2015-04-21T14:44:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSignIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="testSignIn()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="testSignIn" duration-ms="17166" started-at="2015-04-21T14:44:17Z" finished-at="2015-04-21T14:44:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignIn -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2015-04-21T14:44:34Z" finished-at="2015-04-21T14:44:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSignIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeStart" is-config="true" duration-ms="1" started-at="2015-04-21T14:44:34Z" finished-at="2015-04-21T14:44:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testAddAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="testAddAShow()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="testAddAShow" duration-ms="20562" started-at="2015-04-21T14:44:34Z" finished-at="2015-04-21T14:44:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddAShow -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2015-04-21T14:44:55Z" finished-at="2015-04-21T14:44:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testAddAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:44:55Z" finished-at="2015-04-21T14:44:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testDeleteAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="testDeleteAShow()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="testDeleteAShow" duration-ms="18503" started-at="2015-04-21T14:44:55Z" finished-at="2015-04-21T14:45:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteAShow -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeTaken" is-config="true" duration-ms="1" started-at="2015-04-21T14:45:13Z" finished-at="2015-04-21T14:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testDeleteAShow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:45:13Z" finished-at="2015-04-21T14:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSearchForAShow(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="FAIL" signature="testSearchForAShow(com.etouch.taf.core.datamanager.excel.TestParameters)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="testSearchForAShow" duration-ms="7926" started-at="2015-04-21T14:45:13Z" data-provider="tafDataProvider" finished-at="2015-04-21T14:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.etouch.taf.core.datamanager.excel.TestParameters@1763fb5b]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[searchForAShow-AssertErrorMsg: Exception msg: expected [House of Cards] but found [No search results found for: House of Cards]
+deleteAShow-AssertErrorMsg: Exception msg: expected [The Big Bang Theory] but found [The Simpsons]
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: searchForAShow-AssertErrorMsg: Exception msg: expected [House of Cards] but found [No search results found for: House of Cards]
+deleteAShow-AssertErrorMsg: Exception msg: expected [The Big Bang Theory] but found [The Simpsons]
+
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.etouch.taf.util.SoftAssertor.displayErrors(SoftAssertor.java:198)
+	at com.etouch.tivopoc.pages.test.TestTivo.testSearchForAShow(TestTivo.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at com.etouch.taf.core.TestBedManager.executeTestNG(TestBedManager.java:133)
+	at com.etouch.tivopoc.common.TestTivoPOCUnit.initialize(TestTivoPOCUnit.java:80)
+	at com.etouch.tivopoc.common.TestTivoPOCUnit.test(TestTivoPOCUnit.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at junit.framework.TestCase.runTest(TestCase.java:176)
+	at junit.framework.TestCase.runBare(TestCase.java:141)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:113)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:85)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:54)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:134)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchForAShow -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2015-04-21T14:45:21Z" finished-at="2015-04-21T14:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testSearchForAShow(com.etouch.taf.core.datamanager.excel.TestParameters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="testsignOut()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="testsignOut" duration-ms="12153" started-at="2015-04-21T14:45:21Z" finished-at="2015-04-21T14:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsignOut -->
+        <test-method status="PASS" signature="printTimeStart(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeStart" is-config="true" duration-ms="0" started-at="2015-04-21T14:45:21Z" finished-at="2015-04-21T14:45:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testsignOut()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeStart -->
+        <test-method status="PASS" signature="printTimeTaken(java.lang.reflect.Method)[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="printTimeTaken" is-config="true" duration-ms="0" started-at="2015-04-21T14:45:33Z" finished-at="2015-04-21T14:45:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.etouch.tivopoc.pages.test.TestTivo.testsignOut()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTimeTaken -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.etouch.tivopoc.pages.test.TestTivo@3c9c87e4]" name="tearDown" is-config="true" duration-ms="656" started-at="2015-04-21T14:45:33Z" finished-at="2015-04-21T14:45:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.etouch.tivopoc.pages.test.TestTivo -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Chrome Suite -->
+</testng-results>
