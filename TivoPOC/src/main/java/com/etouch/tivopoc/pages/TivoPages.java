@@ -67,12 +67,12 @@ public class TivoPages extends CommonPage {
 		 */
 		
 		//validate the title page
-		String tabTitle = ((Text) webPage.findObject(ObjectType.Text,
+		/*String tabTitle = ((Text) webPage.findObject(ObjectType.Text,
 				properties.getProperty("whatToWatch_XPATH"),
 				ObjectValType.XPATH, MAX_WAIT, WaitCondition.CLICKABLE)).getText();
 		CommonUtil.sop("assert, the page title: " + tabTitle);
 				
-		SoftAssertor.assertEquals(tabTitle,"What to Watch","signIn-AssertErrorMsg:");
+		SoftAssertor.assertEquals(tabTitle,"What to Watch","signIn-AssertErrorMsg:");*/
 		
 		
 	}
