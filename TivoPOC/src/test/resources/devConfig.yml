@@ -37,7 +37,7 @@ webConfig:
  tool: Selenium
  testEnv: local
  testClass: [com.etouch.tivopoc.pages.test.TestTivo]
- currentTestBeds: [Firefox,Chrome]
+ currentTestBeds: [Chrome]
  
 #webConfig:
  #hub: 54.173.15.241
