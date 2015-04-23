@@ -37,7 +37,7 @@ webConfig:
  tool: Selenium
  testEnv: local
  testClass: [com.etouch.tivopoc.pages.test.TestTivo]
- currentTestBeds: [Firefox,Chrome]
+ currentTestBeds: [Firefox, Chrome]
  
 #webConfig:
  #hub: 54.173.15.241
@@ -71,7 +71,7 @@ webConfig:
    browser:
     name: Chrome
     version: 35
-    driverLocation: src/test/resources/driver/chromedriver
+    driverLocation: src/test/resources/driver/chromedriver.exe
    platform: 
     name: Windows
     version: 8
