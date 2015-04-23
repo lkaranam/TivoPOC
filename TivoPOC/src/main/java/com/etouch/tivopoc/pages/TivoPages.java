@@ -22,7 +22,7 @@ public class TivoPages extends CommonPage {
 
 	private static WebDriver driver;
 	public Properties properties = null;
-	final int MAX_WAIT = 45;
+	final int MAX_WAIT = 60;
 
 	String propFile = ".//src//main//resources//TivoProps.properties";
 
@@ -44,7 +44,7 @@ public class TivoPages extends CommonPage {
 	public void signIn(String username, String pwd) throws PageException,
 			InterruptedException {
 		CommonUtil.sop("starting signIn");
-
+	
 		// provide username
 		((TextBox) webPage.findObject(ObjectType.TextBox,
 				properties.getProperty("username_ID"), ObjectValType.ID,
@@ -84,7 +84,7 @@ public class TivoPages extends CommonPage {
 		// hover on 1st show in the list
 		((Image) webPage.findObject(ObjectType.Image,
 				properties.getProperty("1stShow_XPATH"), ObjectValType.XPATH,
-				MAX_WAIT, WaitCondition.VISIBLE)).click();
+				MAX_WAIT, WaitCondition.VISIBLE)).hover();
 		Thread.sleep(3000);
 
 		// click "Info" button
@@ -95,7 +95,7 @@ public class TivoPages extends CommonPage {
 		Thread.sleep(3000);
 		
 		String showTitleText = ((Text) webPage.findObject(ObjectType.Text,
-				properties.getProperty("1stShowTitle_XPATH"),
+				properties.getProperty("showTitle_XPATH"),
 				ObjectValType.XPATH, MAX_WAIT, WaitCondition.CLICKABLE)).getText();
 		CommonUtil.sop("1st show title: "+showTitleText);
 		String expectedShow = showTitleText;
@@ -115,7 +115,7 @@ public class TivoPages extends CommonPage {
 		CommonUtil.sop("assert1, show added text msg: " + videoAddedText);
 
 		SoftAssertor.assertTrue(videoAddedText,"addAShow-AssertErrorMsg1:");
-		//Assert.assertTrue(videoAddedText,"addAShow-AssertErrorMsg1:");
+	
 
 		// click "X" to Close the window
 		((Button) webPage.findObject(ObjectType.Button,
@@ -194,7 +194,7 @@ public class TivoPages extends CommonPage {
 		SoftAssertor.assertEquals(showTitle,"Grimm","deleteAShow-AssertErrorMsg:");
 	}
 
-	public void searchForAShow(String searchTitle) throws PageException,InterruptedException{
+	public void searchForAShow(String searchTitle) throws PageException,InterruptedException {
 		CommonUtil.sop("starting searchForAShow");
 
 		// click Search box and enter "House of Cards"

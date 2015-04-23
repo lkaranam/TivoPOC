@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Built-By: malathikosaraju
-Build-Jdk: 1.7.0_60-ea
+Built-By: etouch
+Build-Jdk: 1.7.0_45
 Created-By: Maven Integration for Eclipse
 

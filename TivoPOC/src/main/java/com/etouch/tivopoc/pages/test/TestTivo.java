@@ -106,7 +106,12 @@ public class TestTivo extends BaseTest {
 		} catch (Exception e) {
 			SoftAssertor.addVerificationFailure(e.getMessage()); e.printStackTrace();
 			log.error(e.getMessage());
-		}  
+		} 
+		finally
+		{			
+			//logDefect(inputs);
+			SoftAssertor.displayErrors();
+		}
 		
 	}
 	 
@@ -123,6 +128,11 @@ public class TestTivo extends BaseTest {
 			e.printStackTrace();
 			log.error(e.getMessage());
 		}
+		finally
+		{			
+			//logDefect(inputs);
+			SoftAssertor.displayErrors();
+		}
 	
 	}
 
@@ -137,6 +147,11 @@ public class TestTivo extends BaseTest {
 			SoftAssertor.addVerificationFailure(e.getMessage());
 			e.printStackTrace();
 			log.error(e.getMessage());
+		}
+		finally
+		{		
+			//logDefect(inputs);
+			SoftAssertor.displayErrors();
 		}
 		
 	}
@@ -159,7 +174,7 @@ public class TestTivo extends BaseTest {
 		{	
 			//if(!isRecordingStopped)
 			//	videoRecorder.stopRecording();			
-			logDefect(inputs);
+			//logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	}
@@ -175,6 +190,12 @@ public class TestTivo extends BaseTest {
 			SoftAssertor.addVerificationFailure(e.getMessage());
 			e.printStackTrace();
 			log.error(e.getMessage());
+		}
+		finally
+		{	
+				
+			//logDefect(inputs);
+			SoftAssertor.displayErrors();
 		}
 		
 	}

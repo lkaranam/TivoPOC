@@ -10,10 +10,12 @@
       <class name="com.etouch.tivopoc.pages.test.TestTivo">
         <methods>
           <include name="setUpBeforeClass"/>
-          <include name="printTimeTaken"/>
+          <include name="testsignOut"/>
           <include name="tearDown"/>
-          <include name="printTimeStart"/>
-          <include name="testSearchForAShow" invocation-numbers="0"/>
+          <include name="testSignIn"/>
+          <include name="testDeleteAShow"/>
+          <include name="testAddAShow"/>
+          <include name="testSearchForAShow"/>
         </methods>
       </class> <!-- com.etouch.tivopoc.pages.test.TestTivo -->
     </classes>
