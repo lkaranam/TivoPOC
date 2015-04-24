@@ -93,9 +93,9 @@ public class TestTivo extends BaseTest {
 			log.error(e.getMessage());
 		}
 	}
-
-	@Test(priority = 1)
-	public void testSignIn() {
+	@Test(dataProvider = "tafDataProvider", dataProviderClass = TafExcelDataProvider.class, priority = 1)
+	@ITafExcelDataProviderInputs(excelFile = "file1", excelsheet = "TestTivoPOC_Defects", dataKey = "SignIn")
+	public void testSignIn(TestParameters inputs) {
 		CommonUtil.sop("Starting testSignIn");
 	
 		String username = "DCtesting1";
@@ -104,23 +104,23 @@ public class TestTivo extends BaseTest {
 			tivoPages.signIn(username, pwd);
 		
 		} catch (Exception e) {
-			SoftAssertor.addVerificationFailure(e.getMessage()); e.printStackTrace();
+			SoftAssertor.addVerificationFailure(e.getMessage());
+			e.printStackTrace();
 			log.error(e.getMessage());
-		} 
+		}
 		finally
-		{			
-			//logDefect(inputs);
+		{		
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
 	}
-	 
-	@Test(priority = 2)
-	public void testAddAShow() {
+	@Test(dataProvider = "tafDataProvider", dataProviderClass = TafExcelDataProvider.class, priority = 2)
+	@ITafExcelDataProviderInputs(excelFile = "file1", excelsheet = "TestTivoPOC_Defects", dataKey = "AddAShow")		 
+	public void testAddAShow(TestParameters inputs) {
 		CommonUtil.sop("Starting testAddAShow");
 	
 		try {
-			// TivoPages tivoPages = new TivoPages(currentUrl,webPage);
 			tivoPages.addAShow();
 
 		} catch (Exception e) {
@@ -130,14 +130,14 @@ public class TestTivo extends BaseTest {
 		}
 		finally
 		{			
-			//logDefect(inputs);
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	
 	}
-
-	@Test(priority = 3)
-	public void testDeleteAShow() {
+	@Test(dataProvider = "tafDataProvider", dataProviderClass = TafExcelDataProvider.class, priority = 3)
+	@ITafExcelDataProviderInputs(excelFile = "file1", excelsheet = "TestTivoPOC_Defects", dataKey = "DeleteAShow")
+	public void testDeleteAShow(TestParameters inputs) {
 		CommonUtil.sop("Starting testDeleteAShow");
 
 		try {
@@ -149,8 +149,8 @@ public class TestTivo extends BaseTest {
 			log.error(e.getMessage());
 		}
 		finally
-		{		
-			//logDefect(inputs);
+		{			
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
@@ -171,16 +171,15 @@ public class TestTivo extends BaseTest {
 			log.error(e.getMessage());
 		}
 		finally
-		{	
-			//if(!isRecordingStopped)
-			//	videoRecorder.stopRecording();			
-			//logDefect(inputs);
+		{			
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	}
 		
-	@Test(priority = 4)
-	public void testsignOut(){
+	@Test(dataProvider = "tafDataProvider", dataProviderClass = TafExcelDataProvider.class, priority = 5)
+	@ITafExcelDataProviderInputs(excelFile = "file1", excelsheet = "TestTivoPOC_Defects", dataKey = "SignOut")
+	public void testsignOut(TestParameters inputs){
 		CommonUtil.sop("Starting testsignOut");
 
 		try {
@@ -192,9 +191,9 @@ public class TestTivo extends BaseTest {
 			log.error(e.getMessage());
 		}
 		finally
-		{	
-				
-			//logDefect(inputs);
+		{		
+			
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
@@ -209,14 +208,12 @@ public class TestTivo extends BaseTest {
 		String attachmentPath = ".//src//test//resources//screenshots";
 		String errMsg = SoftAssertor.readErrorsForTest();
 		
-		CommonUtil.sop("Defect Notes is: " + DEFECT_NOTES);
+		if(errMsg!=null && errMsg.length()>0)
+		{
+			tivoPages.getScreenshot();
+			tivoPages.logAndCreateADefect(TestBedManager.INSTANCE.getDefect(),DEFECT_PROP,SEARCH_TEST_ID, WORKSPACE_ID, PROJECT_ID,  STORY_ID, SEARCH_DEFECT_NAME, DEFECT_SEVERITY,DEFECT_OWNER,DEFECT_NOTES, errMsg, attachmentPath);
+		}
 		
-		tivoPages.getScreenshot();
-		//videoRecorder.createScreenshot(attachmentPath, "error");
-		
-		tivoPages.logAndCreateADefect(TestBedManager.INSTANCE.getDefect(),DEFECT_PROP,SEARCH_TEST_ID, WORKSPACE_ID, PROJECT_ID,  STORY_ID, SEARCH_DEFECT_NAME, DEFECT_SEVERITY,DEFECT_OWNER,DEFECT_NOTES, errMsg, attachmentPath);
-		//defect logging method for jira
-		//mainPage.logAndCreateADefect(TestBedManager.INSTANCE.getDefect(),url3, issueUrl, username, password,keys);
 	}
 	
 
