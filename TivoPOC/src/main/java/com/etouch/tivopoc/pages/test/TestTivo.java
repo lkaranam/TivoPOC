@@ -23,7 +23,7 @@ import com.etouch.tivopoc.pages.TivoPages;
  * The Class TestTivo.
  */
 @IExcelDataFiles(excelDataFiles = { "file1=src//test//resources//testdata//TestTivoPOC_Defects.xls" })
-//@IExcelDataFiles(excelDataFiles = { "file1=testData" }) //not reading testData from devConfig
+//@IExcelDataFiles(excelDataFiles = { "file1=testData" })
 public class TestTivo extends BaseTest {
 
 	/** The log. */
@@ -89,7 +89,7 @@ public class TestTivo extends BaseTest {
 
 		}catch (InterruptedException e) {
 			SoftAssertor.addVerificationFailure(e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 			log.error(e.getMessage());
 		}
 	}
@@ -105,12 +105,12 @@ public class TestTivo extends BaseTest {
 		
 		} catch (Exception e) {
 			SoftAssertor.addVerificationFailure(e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 			log.error(e.getMessage());
 		}
 		finally
 		{		
-			logDefect(inputs);
+			//logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
@@ -125,12 +125,12 @@ public class TestTivo extends BaseTest {
 
 		} catch (Exception e) {
 			SoftAssertor.addVerificationFailure(e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 			log.error(e.getMessage());
 		}
 		finally
 		{			
-			logDefect(inputs);
+			//logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	
@@ -145,12 +145,12 @@ public class TestTivo extends BaseTest {
 			
 		} catch (Exception e) {
 			SoftAssertor.addVerificationFailure(e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 			log.error(e.getMessage());
 		}
 		finally
 		{			
-			logDefect(inputs);
+			//logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
@@ -167,12 +167,12 @@ public class TestTivo extends BaseTest {
 		} catch (Exception e) {
 				
 			SoftAssertor.addVerificationFailure(e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 			log.error(e.getMessage());
 		}
 		finally
 		{			
-			logDefect(inputs);
+			//logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	}
@@ -187,13 +187,13 @@ public class TestTivo extends BaseTest {
 			
 		} catch (Exception e) {
 			SoftAssertor.addVerificationFailure(e.getMessage());
-			e.printStackTrace();
+			//e.printStackTrace();
 			log.error(e.getMessage());
 		}
 		finally
 		{		
 			
-			logDefect(inputs);
+			//logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
