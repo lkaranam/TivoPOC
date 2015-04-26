@@ -35,10 +35,10 @@ public class TivoPages extends CommonPage {
 
 		driver = webPage.getDriver();
 		// Implicit wait
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		loadPage();
-		//Thread.sleep(10000);
+		Thread.sleep(5000);
 
 		properties = new PropertyReader().getObjectRep(propFile);
 
@@ -78,7 +78,6 @@ public class TivoPages extends CommonPage {
 		CommonUtil.sop("starting addAShow");
 		
 		// hover on 1st show in the list
-		//driver.findElement(By.xpath(properties.getProperty("1stShow_XPATH"))).click();
 		WebElement showElement = driver.findElement(By.xpath(properties.getProperty("1stShow_XPATH")));
 		Actions action = new Actions(driver);
 		action.moveToElement(showElement).click().build().perform();
@@ -107,7 +106,7 @@ public class TivoPages extends CommonPage {
 		((Button) webPage.findObject(ObjectType.Button,
 				properties.getProperty("addThisStreamingVideo_XPATH"),
 				ObjectValType.XPATH, MAX_WAIT, WaitCondition.CLICKABLE)).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		// validate the show has been added
 		boolean videoAddedText = ((Text) webPage.findObject(ObjectType.Text,
@@ -122,11 +121,14 @@ public class TivoPages extends CommonPage {
 		((Button) webPage.findObject(ObjectType.Button,
 				properties.getProperty("closeBtn_XPATH"), ObjectValType.XPATH,
 				MAX_WAIT, WaitCondition.CLICKABLE)).click();
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 
 		// click "My Shows" tab
-		driver.findElement(By.xpath(properties.getProperty("myShows_XPATH"))).click();
-		Thread.sleep(3000);
+		WebElement myShowsTab = driver.findElement(By.linkText(properties.getProperty("myShows_LINKTEXT")));
+		//WebElement myShowsTab = driver.findElement(By.xpath(properties.getProperty("myShows_XPATH")));
+		//CommonUtil.sop("linkText: "+(myShowsTab));
+		action.moveToElement(myShowsTab).click().build().perform();
+		Thread.sleep(4000);
 		
 		
 		//validate number of shows in My shows page
@@ -148,7 +150,6 @@ public class TivoPages extends CommonPage {
 	public void deleteAShow() throws PageException, InterruptedException {
 		CommonUtil.sop("starting deleteAShow");
 
-		Thread.sleep(3000);
 		// click "Edit"
 		((Button) webPage.findObject(ObjectType.Button,
 				properties.getProperty("editBtn_XPATH"), ObjectValType.XPATH,
@@ -193,11 +194,11 @@ public class TivoPages extends CommonPage {
 		WebElement searchBox = driver.findElement(By.xpath(properties.getProperty("searchBox_XPATH")));
 		searchBox.clear();
 		searchBox.sendKeys(searchTitle);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	
 		// click submit
 		driver.findElement(By.xpath(properties.getProperty("submit_Xpath"))).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		// validate the search result show title
 		String searchResult = driver.findElement(
@@ -214,7 +215,7 @@ public class TivoPages extends CommonPage {
 		((Text) webPage.findObject(ObjectType.Text,
 				properties.getProperty("signOut_XPATH"), ObjectValType.XPATH,
 				MAX_WAIT, WaitCondition.CLICKABLE)).click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		
 		//validate on "Login" page
 		String loginText = ((Text) webPage.findObject(ObjectType.Text,
