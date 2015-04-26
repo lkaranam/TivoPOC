@@ -14,7 +14,7 @@
 	<property name="test.resources" value="${ws.home}/src/test/resources" />
 	<property name="ng.result" value="test-output" />
 	<property name="browser" value="/Applications/Firefox.app/Contents/MacOS/firefox"/>
-    <property name="browser" value="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"/>
+    <!-- <property name="browser" value="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"/> -->
 
 
 	<path id="testcase.path">
