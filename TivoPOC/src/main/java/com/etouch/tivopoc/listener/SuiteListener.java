@@ -85,7 +85,7 @@ public class SuiteListener implements ISuiteListener {
 		if(ConfigUtil.isWebTestTypeEnabled()){
 			for(TestBedConfig tbConfig:testBedMgrConfig.getWebConfig().getTestBeds()){
 				
-				CommonUtil.sop("Current TestBedName: " + testBedName + "; "+"tbConfig TestBedName: " +tbConfig.getTestBedName() );
+				//CommonUtil.sop("Current TestBedName: " + testBedName + "; "+"tbConfig TestBedName: " +tbConfig.getTestBedName() );
 				if(tbConfig.getTestBedName().equalsIgnoreCase(testBedName)){
 					currentTestBed=copyTestBedDetails(tbConfig);
 					break;
