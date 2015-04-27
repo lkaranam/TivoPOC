@@ -25,7 +25,7 @@ public class TivoPages extends CommonPage {
 
 	private static WebDriver driver;
 	public Properties properties = null;
-	final int MAX_WAIT = 60;
+	final int MAX_WAIT = 45;
 
 	String propFile = ".//src//main//resources//TivoProps.properties";
 
