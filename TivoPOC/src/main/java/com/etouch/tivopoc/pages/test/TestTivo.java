@@ -110,7 +110,7 @@ public class TestTivo extends BaseTest {
 		}
 		finally
 		{		
-			//logDefect(inputs);
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
@@ -130,7 +130,7 @@ public class TestTivo extends BaseTest {
 		}
 		finally
 		{			
-			//logDefect(inputs);
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	
@@ -150,7 +150,7 @@ public class TestTivo extends BaseTest {
 		}
 		finally
 		{			
-			//logDefect(inputs);
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
@@ -172,7 +172,7 @@ public class TestTivo extends BaseTest {
 		}
 		finally
 		{			
-			//logDefect(inputs);
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 	}
@@ -193,7 +193,7 @@ public class TestTivo extends BaseTest {
 		finally
 		{		
 			
-			//logDefect(inputs);
+			logDefect(inputs);
 			SoftAssertor.displayErrors();
 		}
 		
