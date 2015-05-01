@@ -135,7 +135,7 @@
 	</target>
 
 	<!-- to send xslt reports via email-->
-	<target name="sendMail"> depends="makexsltreports">
+	<target name="sendMail" depends="makexsltreports">
 		<zip destfile="${ws.home}/XSLT_Reports/output/Report.zip" basedir="${ws.home}/XSLT_Reports/output" />
 		
 		<mail password="etouch123" user="tester.etouch@gmail.com" ssl="true"
