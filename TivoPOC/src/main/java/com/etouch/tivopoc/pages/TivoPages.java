@@ -49,8 +49,14 @@ public class TivoPages extends CommonPage {
 		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
 		loadPage();
-		Thread.sleep(5000);
-
+		//this code is for two browsers running parallel in jenkins with a lag
+		if(driver.toString().startsWith("ChromeDriver:")) {
+			Thread.sleep(45000);
+		}else {
+			Thread.sleep(5000);
+		}
+		
+		
 		properties = new PropertyReader().getObjectRep(propFile);
 
 	}
@@ -93,6 +99,8 @@ public class TivoPages extends CommonPage {
 		
 		// hover on 1st show in the list
 		WebElement showElement = driver.findElement(By.xpath(properties.getProperty("show_XPATH")));
+		boolean showElement1 = driver.findElement(By.xpath(properties.getProperty("show_XPATH"))).isDisplayed();
+		CommonUtil.sop("showElement1: "+showElement1);
 		Actions action = new Actions(driver);
 		action.moveToElement(showElement).click().build().perform();
 		Thread.sleep(3000);
@@ -135,17 +143,28 @@ public class TivoPages extends CommonPage {
 		}catch(Exception e){
 			errorMsg1 = e.getMessage();
 			
+			//try{
+				
 			videoAddedBtnTextMsg = driver.findElement(By.xpath(properties.getProperty("videoAddedBtn_XPATH"))).isDisplayed();
 			CommonUtil.sop("assert1, show added button text msg: " + videoAddedBtnTextMsg);
-			SoftAssertor.assertTrue(videoAddedBtnTextMsg,"addAShow-AssertErrorMsg1:"); 
-	
+			SoftAssertor.assertTrue(videoAddedBtnTextMsg,"addAShow-AssertErrorMsg1:"); //its not triggering exception so no need for catch block? its handled in
+																						//the assertTrue method
+			
+			/*}catch(Exception e2){
+				errorMsg2 = e2.getMessage();
+				CommonUtil.sop("error message2: "+errorMsg2);
+			}*/
+			
 		}
 		finally {
 				
+			//if(errorMsg1.length()>0 && errorMsg2.length()>0)
 			if(errorMsg1.length()>0 && videoAddedBtnTextMsg == false )	
 			{
 				SoftAssertor.addVerificationFailure(errorMsg1);
 				log.error(errorMsg1);
+				//SoftAssertor.addVerificationFailure(errorMsg2);
+				//log.error(errorMsg2);
 			}
 			
 		
@@ -154,6 +173,7 @@ public class TivoPages extends CommonPage {
 				properties.getProperty("closeBtn_XPATH"), ObjectValType.XPATH,
 				MAX_WAIT, WaitCondition.CLICKABLE)).click();
 		Thread.sleep(3000);
+
 		
 		/*Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ESCAPE);
@@ -163,6 +183,8 @@ public class TivoPages extends CommonPage {
 		
 		// click "My Shows" tab
 		WebElement myShowsTab = driver.findElement(By.linkText(properties.getProperty("myShows_LINKTEXT")));
+		//WebElement myShowsTab = driver.findElement(By.xpath(properties.getProperty("myShows_XPATH")));
+		//CommonUtil.sop("linkText: "+(myShowsTab));
 		action.moveToElement(myShowsTab).click().build().perform();
 		Thread.sleep(3000);
 		
