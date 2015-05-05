@@ -51,7 +51,7 @@ public class TivoPages extends CommonPage {
 		loadPage();
 		//this code is for two browsers running parallel in jenkins with a lag
 		if(driver.toString().startsWith("ChromeDriver:")) {
-			Thread.sleep(30000);
+			Thread.sleep(45000);
 		}else {
 			Thread.sleep(5000);
 		}
