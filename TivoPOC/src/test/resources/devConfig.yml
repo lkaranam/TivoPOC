@@ -13,6 +13,9 @@ defectConfig:
  build: 1.0 
  username: rpandey@etouch.net
  password: UmFsbHkxMjMh
+ url3: https://etouch.atlassian.net/
+ issueUrl: https://etouch.atlassian.net/rest/api/2/issue
+ keys:  ETAAPIHS 
  
 tfsConfig:
  collectionURL: http://tfs-na.ihs.com:8080/tfs/NA_Energy_Collection
@@ -27,8 +30,9 @@ tfsConfig:
  
 testngConfig:
  listener: com.etouch.tivopoc.listener.SuiteListener
- className: []
+ testngClass:
  reporter: com.etouch.report.TestNGReporter
+ parallelMode: true
 
 webConfig:
  hub: localhost
@@ -36,27 +40,21 @@ webConfig:
  URL: http://www.rcn2go.com/tve/start
  tool: Selenium
  testEnv: local
- testClass: [com.etouch.tivopoc.pages.test.TestTivo]
- currentTestBeds: [Firefox, Chrome]
- 
-#webConfig:
- #hub: 54.173.15.241
- #port: 4444
- #URL: http://www.amazon.com
- #tool: Selenium
- #testEnv: remote
- #currentTestBeds: [Chrome]
-  
+ testngClass:
+ - className: com.etouch.tivopoc.pages.test.TestTivo
+   methodList: []
+ currentTestBeds: [Firefox,Chrome]
+
  testBeds:
  #FireFox TestBed
  - testBedName: Firefox
    browser:
     name: fireFox
-    version: 25
+    version: 37
     driverLocation: 
    platform: 
-    name: Windows
-    version: 8
+    name: OS X
+    version: 10.9.5
  #IE10 TestBed
  - testBedName: InternetExplorer
    browser:
@@ -73,16 +71,16 @@ webConfig:
     version: 35
     driverLocation: src/test/resources/driver/chromedriver
    platform: 
-    name: Windows
-    version: 8
+    name: OS X
+    version: 10.9.5
  #Safari TestBed
  - testBedName: Safari
    browser:
     name: Safari
     version: 2.28.0
    platform: 
-    name: Windows
-    version: 8
+    name: OS X
+    version: 10.9.5
   
 #mobileConfig:
  #hub: localhost
@@ -96,7 +94,6 @@ mobileConfig:
  port: 4723
  tool: Appium
  testEnv: local
- testClass: [com.etouch.samepagedemo.test.SamePageDemoRunTest]
  currentTestBeds: []
  
  testBeds:
@@ -118,8 +115,8 @@ mobileConfig:
   #Android TestBeds
  - testBedName: Android
    device:
-    name: Nexus 5
-    type: Device
+    name: Nexus_4.4.2_19
+    type: Emulator
    browser:
     name: 
     version: 
@@ -128,8 +125,8 @@ mobileConfig:
     name: Android
     version: 4.4.2
    app:
-    appPackage: com.ecs.android	 
-    appActivity: com.ecs.android.oauth.OAuthFlowApp
+    appPackage: com.ihs.riginfomobile	 
+    appActivity: riginfomobile.droid.views.LoginView
     
    #ios TestBeds
  - testBedName: iPhoneNative
